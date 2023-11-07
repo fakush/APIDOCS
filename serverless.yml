@@ -1,0 +1,80 @@
+service: fake-backend-demo
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+plugins:
+  - serverless-offline
+
+functions:
+  products:
+    handler: src/handlers/products/index.handler
+    events:
+      - httpApi:
+          path: /api/products
+          method: get
+      - httpApi:
+          path: /api/products/{id}
+          method: get
+      - httpApi:
+          path: /api/products
+          method: post
+      - httpApi:
+          path: /api/products/{id}
+          method: patch
+      - httpApi:
+          path: /api/products/{id}
+          method: delete
+  reviews:
+    handler: src/handlers/reviews/index.handler
+    events:
+      - httpApi:
+          path: /api/reviews
+          method: get
+      - httpApi:
+          path: /api/reviews/{id}
+          method: get
+      - httpApi:
+          path: /api/reviews
+          method: post
+      - httpApi:
+          path: /api/reviews/{id}
+          method: delete
+  users:
+    handler: src/handlers/users/index.handler
+    events:
+      - httpApi:
+          path: /api/users
+          method: get
+      - httpApi:
+          path: /api/users/{id}
+          method: get
+      - httpApi:
+          path: /api/users
+          method: post
+      - httpApi:
+          path: /api/users/{id}
+          method: patch
+      - httpApi:
+          path: /api/users/{id}
+          method: delete
+  orders:
+    handler: src/handlers/orders/index.handler
+    events:
+      - httpApi:
+          path: /api/orders
+          method: get
+      - httpApi:
+          path: /api/orders/{id}
+          method: get
+      - httpApi:
+          path: /api/orders/{id}
+          method: patch
+      - httpApi:
+          path: /api/orders
+          method: post
+      - httpApi:
+          path: /api/orders/{id}
+          method: delete

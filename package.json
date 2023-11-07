@@ -1,0 +1,22 @@
+{
+  "name": "fake-backend-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "readDocs": "node documentation.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "swagger-ui": "^5.9.1",
+    "swagger-ui-dist": "^5.9.1",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "serverless-offline": "^13.2.0"
+  }
+}
