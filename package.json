@@ -4,6 +4,7 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
+    "dev": "sls offline",
     "serveDocs": "node ./src/utils/serveDocs.js",
     "makeDocs": "node ./src/utils/makeDocs.js"
   },

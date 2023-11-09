@@ -4,6 +4,23 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
+  httpApi:
+    cors:
+      allowedOrigins:
+        - '*'
+      allowedHeaders:
+        - Content-Type
+        - X-Amz-Date
+        - Authorization
+        - X-Api-Key
+        - X-Amz-Security-Token
+        - X-Amz-User-Agent
+      allowedMethods:
+        - OPTIONS
+        - GET
+        - POST
+        - PATCH
+        - DELETE
 
 plugins:
   - serverless-offline

@@ -11,7 +11,7 @@
 
 > Fake Backend to test Postman Documentation Demo
 
-### ✨ [Demo](https://github.com/fcreus-edrans/fake-backend-demo)
+### ✨ [API Documentation](https://github.com/fcreus-edrans/fake-backend-demo/blob/main/documentation/fake-backend-demo.md)
 
 ## Install
 
@@ -25,10 +25,16 @@ npm install
 sls offline
 ```
 
-## Run tests
+## Run Swagger
 
 ```sh
-npm run test
+npm run serveDocs
+```
+
+## Make Doc Files (From PostmanCollection)
+
+```sh
+npm run makeDocs
 ```
 
 ## Author
