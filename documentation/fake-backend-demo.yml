@@ -9,6 +9,7 @@ servers:
   - url: http://{{base_url}}
 tags:
   - name: Products
+    description: This are the endpointo to work with products
   - name: Reviews
   - name: Users
   - name: Orders
@@ -563,12 +564,13 @@ paths:
     get:
       tags:
         - Reviews
-      summary: /api/reviews?amount={amount}
+      summary: /api/reviews?amount={number}
       parameters:
         - name: amount
           in: query
           schema:
             type: integer
+          description: Optional Params
           example: '3'
       responses:
         '200':
@@ -1803,11 +1805,17 @@ paths:
                 type: object
               example:
                 message: 'Error Creating Order: Missing parameters.'
-  /api/orders/c5d6dedc1a5cb67cf16debdf:
+  /api/orders/{product_id}:
     get:
       tags:
         - Orders
       summary: /api/orders/{id}
+      parameters:
+        - name: product_id
+          in: path
+          schema:
+            type: string
+          required: true
       responses:
         '200':
           description: OK
@@ -1907,6 +1915,12 @@ paths:
       tags:
         - Orders
       summary: /api/orders/{id}
+      parameters:
+        - name: product_id
+          in: path
+          schema:
+            type: string
+          required: true
       responses:
         '200':
           description: OK

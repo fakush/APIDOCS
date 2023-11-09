@@ -4,19 +4,19 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "readDocs": "node documentation.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serveDocs": "node ./src/utils/serveDocs.js",
+    "makeDocs": "node ./src/utils/makeDocs.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@faker-js/faker": "^8.2.0",
-    "swagger-ui": "^5.9.1",
-    "swagger-ui-dist": "^5.9.1",
-    "yaml": "^2.3.4"
+    "@faker-js/faker": "^8.2.0"
   },
   "devDependencies": {
-    "serverless-offline": "^13.2.0"
+    "postman-to-markdown": "^1.1.0",
+    "postman-to-openapi": "^3.0.1",
+    "serverless-offline": "^13.2.0",
+    "swagger-ui-express": "^5.0.0"
   }
 }

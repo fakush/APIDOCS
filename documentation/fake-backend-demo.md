@@ -520,7 +520,7 @@ This is a fake backend for demo porpouses. All endpoints use random fake generat
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: /api/reviews?amount={amount}
+## End-point: /api/reviews?amount={number}
 ### Method: GET
 >```
 >{{base_url}}/api/reviews?amount=3
@@ -1148,7 +1148,7 @@ This is a fake backend for demo porpouses. All endpoints use random fake generat
 ## End-point: /api/orders/{id}
 ### Method: GET
 >```
->{{base_url}}/api/orders/c5d6dedc1a5cb67cf16debdf
+>{{base_url}}/api/orders/{{product_id}}
 >```
 ### Response: 200
 ```json
@@ -1427,7 +1427,7 @@ This is a fake backend for demo porpouses. All endpoints use random fake generat
 ## End-point: /api/orders/{id}
 ### Method: DELETE
 >```
->{{base_url}}/api/orders/c5d6dedc1a5cb67cf16debdf
+>{{base_url}}/api/orders/{{product_id}}
 >```
 ### Response: 200
 ```json

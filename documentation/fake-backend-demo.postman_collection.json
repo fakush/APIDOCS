@@ -100,10 +100,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/api/products",
+									"raw": "localhost:3000/api/products",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"products"
@@ -243,14 +244,15 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/api/products/{{product_id}}",
+									"raw": "localhost:3000/api/products/c5d6dedc1a5cb67cf16debdf",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"products",
-										"{{product_id}}"
+										"c5d6dedc1a5cb67cf16debdf"
 									]
 								}
 							},
@@ -457,10 +459,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/api/products",
+									"raw": "localhost:3000/api/products",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"products"
@@ -660,10 +663,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/api/products",
+									"raw": "localhost:3000/api/products",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"products"
@@ -850,14 +854,15 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/api/products/{{product_id}}",
+									"raw": "localhost:3000/api/products/c5d6dedc1a5cb67cf16debdf",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"products",
-										"{{product_id}}"
+										"c5d6dedc1a5cb67cf16debdf"
 									]
 								}
 							},
@@ -1016,14 +1021,15 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/api/products/{{product_id}}",
+									"raw": "localhost:3000/api/products/c5d6dedc1a5cb67cf16debdf",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"products",
-										"{{product_id}}"
+										"c5d6dedc1a5cb67cf16debdf"
 									]
 								}
 							},
@@ -1119,7 +1125,8 @@
 						}
 					]
 				}
-			]
+			],
+			"description": "This are the endpointo to work with products"
 		},
 		{
 			"name": "Reviews",
@@ -1191,10 +1198,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/reviews",
+									"raw": "localhost:3000/api/reviews",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"reviews"
@@ -1311,14 +1319,15 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/reviews/{{product_id}}",
+									"raw": "localhost:3000/api/reviews/c5d6dedc1a5cb67cf16debdf",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"reviews",
-										"{{product_id}}"
+										"c5d6dedc1a5cb67cf16debdf"
 									]
 								}
 							},
@@ -1410,7 +1419,7 @@
 					]
 				},
 				{
-					"name": "/api/reviews?amount={amount}",
+					"name": "/api/reviews?amount={number}",
 					"event": [
 						{
 							"listen": "test",
@@ -1481,7 +1490,8 @@
 							"query": [
 								{
 									"key": "amount",
-									"value": "3"
+									"value": "3",
+									"description": "Optional Params"
 								}
 							]
 						}
@@ -1493,10 +1503,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/reviews?amount=3",
+									"raw": "localhost:3000/api/reviews?amount=3",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"reviews"
@@ -1671,10 +1682,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/api/reviews",
+									"raw": "localhost:3000/api/reviews",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"reviews"
@@ -1817,14 +1829,15 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/reviews/{{product_id}}",
+									"raw": "localhost:3000/api/reviews/c5d6dedc1a5cb67cf16debdf",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"reviews",
-										"{{product_id}}"
+										"c5d6dedc1a5cb67cf16debdf"
 									]
 								}
 							},
@@ -1982,10 +1995,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/users",
+									"raw": "localhost:3000/api/users",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"users"
@@ -2113,10 +2127,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/users/12345",
+									"raw": "localhost:3000/api/users/12345",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"users",
@@ -2166,10 +2181,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/users/12345",
+									"raw": "localhost:3000/api/users/12345",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"users",
@@ -2281,10 +2297,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/api/users",
+									"raw": "localhost:3000/api/users",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"users"
@@ -2469,14 +2486,15 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/api/users/{{product_id}}",
+									"raw": "localhost:3000/api/users/c5d6dedc1a5cb67cf16debdf",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"users",
-										"{{product_id}}"
+										"c5d6dedc1a5cb67cf16debdf"
 									]
 								}
 							},
@@ -2635,14 +2653,15 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/api/users/{{product_id}}",
+									"raw": "localhost:3000/api/users/c5d6dedc1a5cb67cf16debdf",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"users",
-										"{{product_id}}"
+										"c5d6dedc1a5cb67cf16debdf"
 									]
 								}
 							},
@@ -2810,10 +2829,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/orders",
+									"raw": "localhost:3000/api/orders",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"orders"
@@ -2912,14 +2932,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/orders/c5d6dedc1a5cb67cf16debdf",
+							"raw": "{{base_url}}/api/orders/{{product_id}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"orders",
-								"c5d6dedc1a5cb67cf16debdf"
+								"{{product_id}}"
 							]
 						}
 					},
@@ -2930,10 +2950,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/orders/c5d6dedc1a5cb67cf16debdf",
+									"raw": "localhost:3000/api/orders/c5d6dedc1a5cb67cf16debdf",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"orders",
@@ -3100,10 +3121,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/orders",
+									"raw": "localhost:3000/api/orders",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"orders"
@@ -3236,14 +3258,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/orders/c5d6dedc1a5cb67cf16debdf",
+							"raw": "{{base_url}}/api/orders/{{product_id}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"orders",
-								"c5d6dedc1a5cb67cf16debdf"
+								"{{product_id}}"
 							]
 						}
 					},
@@ -3254,10 +3276,11 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/orders/c5d6dedc1a5cb67cf16debdf",
+									"raw": "localhost:3000/api/orders/c5d6dedc1a5cb67cf16debdf",
 									"host": [
-										"{{base_url}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
 										"api",
 										"orders",
