@@ -6,8 +6,7 @@ info:
     generated data to demonstrate the Postman documentation capabilities.
   version: 1.0.0
 servers:
-  - url: http://localhost:3000
-  - url: https://dwcfg57vx0.execute-api.us-east-1.amazonaws.com
+  - url: http://{{base_url}}
 tags:
   - name: Products
     description: This are the endpointo to work with products
@@ -1345,152 +1344,54 @@ paths:
         '200':
           description: OK
           headers:
-            content-type:
-              schema:
-                type: string
-                example: application/json; charset=utf-8
-            cache-control:
-              schema:
-                type: string
-                example: no-cache
-            vary:
-              schema:
-                type: string
-                example: accept-encoding
-            content-encoding:
-              schema:
-                type: string
-                example: gzip
             Date:
               schema:
                 type: string
-                example: Mon, 06 Nov 2023 16:44:32 GMT
+                example: Thu, 09 Nov 2023 13:59:08 GMT
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Content-Length:
+              schema:
+                type: integer
+                example: '864'
             Connection:
               schema:
                 type: string
                 example: keep-alive
-            Keep-Alive:
+            Apigw-Requestid:
               schema:
                 type: string
-                example: timeout=5
-            Transfer-Encoding:
-              schema:
-                type: string
-                example: chunked
+                example: OIjShgIXoAMEM4w=
           content:
             application/json:
               schema:
                 type: object
               example:
-                orders:
-                  - id: 3d007a5ac1df41ab11ddd4ba
-                    user_id: c52cec2de489d2e10d7be4bd
-                    order_date: '2023-04-27T10:13:58.868Z'
-                    items:
-                      - product_id: cce8cbaeedc6fd442ff676a0
-                        rating: 3
-                        price_per_unit: '1657.00'
-                      - product_id: e908e406c6d7d1d791672c5b
-                        rating: 2
-                        price_per_unit: '1669.00'
-                      - product_id: ead9eaaa1a40f08cd2d1d975
-                        rating: 4
-                        price_per_unit: '1333.00'
-                      - product_id: a8ff63faeea5c5474be292b1
-                        rating: 5
-                        price_per_unit: '1872.00'
-                      - product_id: 2bcbf3bff817feeaaf6e8a5f
-                        rating: 1
-                        price_per_unit: '1713.00'
-                      - product_id: 0fffbbf4bb16aadb6f748fae
-                        rating: 2
-                        price_per_unit: '1675.00'
-                      - product_id: 6faffb7f0e34fd0a700ebd25
-                        rating: 1
-                        price_per_unit: '1525.00'
-                    total_price: ''
-                    status: delivered
-                  - id: 40b6b29a9cfc135e2901b06a
-                    user_id: fa5b5d75db34fdd48fe7d122
-                    order_date: '2022-12-08T10:56:45.886Z'
-                    items:
-                      - product_id: ba68e8d5eb94c424bc26a4ce
-                        rating: 1
-                        price_per_unit: '969.00'
-                    total_price: ''
-                    status: delivered
-                  - id: aac32d963eee5a00dba7738f
-                    user_id: 17eb31dacf5fa3b94b7ae4db
-                    order_date: '2022-12-17T17:12:03.997Z'
-                    items:
-                      - product_id: be80738dfedde88afee6c4a8
-                        rating: 1
-                        price_per_unit: '1541.00'
-                      - product_id: 6e24d4fbeef58ea3db3cf1fa
-                        rating: 1
-                        price_per_unit: '1888.00'
-                      - product_id: 73326c0eddcfd0f3bda970c3
-                        rating: 3
-                        price_per_unit: '883.00'
-                    total_price: ''
-                    status: delivered
-                  - id: 7d689ded155aec2abdecbd7b
-                    user_id: ec4edb5c2cdf6e3247ec9ede
-                    order_date: '2023-07-21T03:58:59.101Z'
-                    items:
-                      - product_id: cf7285ede012a5ce3d0cedcd
-                        rating: 3
-                        price_per_unit: '1341.00'
-                      - product_id: 2cc05f48667807a17dfa10af
-                        rating: 4
-                        price_per_unit: '1050.00'
-                      - product_id: ebe05cdfbada6d08d09500a1
-                        rating: 5
-                        price_per_unit: '877.00'
-                      - product_id: d6bc0f2aadeff1ba8d5dbe23
-                        rating: 1
-                        price_per_unit: '770.00'
-                      - product_id: 2e21bc50baa17838a9cf5740
-                        rating: 4
-                        price_per_unit: '102.00'
-                      - product_id: 4bd6bbedafdc2afca78e0566
-                        rating: 5
-                        price_per_unit: '704.00'
-                    total_price: ''
-                    status: delivered
-                  - id: 5a158ee36afd3832c61f174d
-                    user_id: a5baa85f6beb5b5fccb2a419
-                    order_date: '2023-01-20T19:10:54.624Z'
-                    items:
-                      - product_id: 6c1f0dfe39abb06baee0164a
-                        rating: 4
-                        price_per_unit: '600.00'
-                      - product_id: 262babe8bd3d5bfb667cce3f
-                        rating: 2
-                        price_per_unit: '1975.00'
-                      - product_id: 45cd8b3ea57cbdb735c717f6
-                        rating: 2
-                        price_per_unit: '1775.00'
-                    total_price: ''
-                    status: delivered
-                  - id: 5907b3a92dbc2fefc2bbeaf8
-                    user_id: 634f74fae8af08bcf7ddd8a7
-                    order_date: '2023-07-07T23:24:48.536Z'
-                    items:
-                      - product_id: f743bff44cccce19008c7a53
-                        rating: 3
-                        price_per_unit: '469.00'
-                      - product_id: 60aa35a27a1e2e9ecf1c76ef
-                        rating: 1
-                        price_per_unit: '1360.00'
-                      - product_id: 5f4dd28ee16d1988fcdecdfd
-                        rating: 2
-                        price_per_unit: '1212.00'
-                      - product_id: b6e213d15ab5a0bde7698a1f
-                        rating: 3
-                        price_per_unit: '1089.00'
-                    total_price: ''
-                    status: delivered
+                message: Order Created
+                order:
+                  id: 54ae90f1e9f9adb157ed7f9a
+                  user_id: 55f975ddc33416da4cdfc1a1
+                  order_date: '2022-11-15T05:25:28.839Z'
+                  items:
+                    - product_id: 927595bd3ddfcdf95204cd64
+                      rating: 2
+                      price_per_unit: '267.00'
+                    - product_id: caec06329b3cce0b5e63a83e
+                      rating: 4
+                      price_per_unit: '1324.00'
+                    - product_id: c8e295b8e79bf63eccfccdda
+                      rating: 3
+                      price_per_unit: '1491.00'
+                    - product_id: a39f6cd0b8ef5dd2a513e6de
+                      rating: 1
+                      price_per_unit: '291.00'
+                    - product_id: a91fbe48e2a45c62ea5fe268
+                      rating: 3
+                      price_per_unit: '444.00'
+                  total_price: 3817
+                  status: pending
         '400':
           description: Bad Request
           headers:
