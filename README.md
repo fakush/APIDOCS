@@ -11,7 +11,7 @@
 
 > Fake Backend to test Postman Documentation Demo
 
-### ✨ [API Documentation](https://github.com/fcreus-edrans/fake-backend-demo/blob/main/documentation/fake-backend-demo.md)
+### ✨ [API Documentation](https://github.com/fcreus-edrans/fake-backend-demo/blob/main/docs/fake-backend-demo.md)
 
 ## Install
 
