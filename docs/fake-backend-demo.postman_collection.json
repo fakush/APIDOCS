@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "12b26dbe-7690-4b01-8581-45262c7af8c8",
+		"_postman_id": "730532c8-0a62-4975-a484-2f3db74c0d95",
 		"name": "fake-backend-demo",
 		"description": "This is a fake backend for demo porpouses. All endpoints use random fake generated data to demonstrate the Postman documentation capabilities.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
@@ -90,15 +90,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "localhost:3000/api/products",
 									"host": [
@@ -234,15 +225,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "localhost:3000/api/products/c5d6dedc1a5cb67cf16debdf",
 									"host": [
@@ -297,15 +279,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "{{base_url}}/api/products/{{product_id}}",
 									"host": [
@@ -449,15 +422,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "localhost:3000/api/products",
 									"host": [
@@ -515,15 +479,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "{{base_url}}/api/products?amount=200",
 									"host": [
@@ -1301,14 +1256,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/reviews/{{product_id}}",
+							"raw": "{{base_url}}/api/reviews/{{review_id}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"reviews",
-								"{{product_id}}"
+								"{{review_id}}"
 							]
 						}
 					},
@@ -1811,14 +1766,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/reviews/{{product_id}}",
+							"raw": "{{base_url}}/api/reviews/{{review_id}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"reviews",
-								"{{product_id}}"
+								"{{review_id}}"
 							]
 						}
 					},
@@ -2109,14 +2064,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/api/users/{{product_id}}",
+							"raw": "{{base_url}}/api/users/{{user_id}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"users",
-								"{{product_id}}"
+								"{{user_id}}"
 							]
 						}
 					},
@@ -2459,14 +2414,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/api/users/{{product_id}}",
+							"raw": "{{base_url}}/api/users/{{user_id}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"users",
-								"{{product_id}}"
+								"{{user_id}}"
 							]
 						}
 					},
@@ -2626,14 +2581,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/api/users/{{product_id}}",
+							"raw": "{{base_url}}/api/users/{{user_id}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"users",
-								"{{product_id}}"
+								"{{user_id}}"
 							]
 						}
 					},
@@ -2932,14 +2887,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/orders/{{product_id}}",
+							"raw": "{{base_url}}/api/orders/{{order_id}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"orders",
-								"{{product_id}}"
+								"{{order_id}}"
 							]
 						}
 					},
@@ -3254,14 +3209,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/orders/{{product_id}}",
+							"raw": "{{base_url}}/api/orders/{{order_id}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"orders",
-								"{{product_id}}"
+								"{{order_id}}"
 							]
 						}
 					},

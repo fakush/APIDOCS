@@ -6,7 +6,8 @@ info:
     generated data to demonstrate the Postman documentation capabilities.
   version: 1.0.0
 servers:
-  - url: http://{{base_url}}
+  - url: http://localhost:3000
+  - url: https://dwcfg57vx0.execute-api.us-east-1.amazonaws.com
 tags:
   - name: Products
     description: This are the endpointo to work with products
@@ -25,6 +26,7 @@ paths:
           schema:
             type: integer
           example: '2'
+          required: false
       responses:
         '200':
           description: OK
@@ -496,6 +498,7 @@ paths:
             type: integer
           description: Optional Params
           example: '3'
+          required: false
       responses:
         '200':
           description: OK
@@ -675,13 +678,13 @@ paths:
                 type: object
               example:
                 message: 'Error Creating review: Missing parameters.'
-  /api/reviews/{product_id}:
+  /api/reviews/{review_id}:
     get:
       tags:
         - Reviews
       summary: /api/reviews/{id}
       parameters:
-        - name: product_id
+        - name: review_id
           in: path
           schema:
             type: string
@@ -768,7 +771,7 @@ paths:
         - Reviews
       summary: /api/reviews/{id}
       parameters:
-        - name: product_id
+        - name: review_id
           in: path
           schema:
             type: string
@@ -984,13 +987,13 @@ paths:
                 type: object
               example:
                 message: 'Error Creating user: Missing parameters.'
-  /api/users/{product_id}:
+  /api/users/{user_id}:
     get:
       tags:
         - Users
       summary: /api/users/{id}
       parameters:
-        - name: product_id
+        - name: user_id
           in: path
           schema:
             type: string
@@ -1086,7 +1089,7 @@ paths:
                 password: RFG_O0Kf8DxPWJR
                 role: user
       parameters:
-        - name: product_id
+        - name: user_id
           in: path
           schema:
             type: string
@@ -1169,7 +1172,7 @@ paths:
         - Users
       summary: /api/users/{id}
       parameters:
-        - name: product_id
+        - name: user_id
           in: path
           schema:
             type: string
@@ -1425,13 +1428,13 @@ paths:
                 type: object
               example:
                 message: 'Error Creating Order: Missing parameters.'
-  /api/orders/{product_id}:
+  /api/orders/{order_id}:
     get:
       tags:
         - Orders
       summary: /api/orders/{id}
       parameters:
-        - name: product_id
+        - name: order_id
           in: path
           schema:
             type: string
@@ -1536,7 +1539,7 @@ paths:
         - Orders
       summary: /api/orders/{id}
       parameters:
-        - name: product_id
+        - name: order_id
           in: path
           schema:
             type: string

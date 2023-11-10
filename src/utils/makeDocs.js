@@ -1,8 +1,8 @@
 const postmanToOpenApi = require('postman-to-openapi')
 const { exec } = require('child_process');
 
-const postmanCollection = process.cwd() + '/documentation/fake-backend-demo.postman_collection.json'
-const outputSwaggerFile = process.cwd() + '/documentation/fake-backend-demo.yml'
+const postmanCollection = process.cwd() + '/docs/fake-backend-demo.postman_collection.json'
+const outputSwaggerFile = process.cwd() + '/docs/fake-backend-demo.yml'
 
 exec(`postman-to-markdown ${postmanCollection}`, (error, stdout, stderr) => {
     if (error) {

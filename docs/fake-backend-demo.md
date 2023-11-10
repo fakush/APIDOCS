@@ -257,7 +257,7 @@ This is a fake backend for demo porpouses. All endpoints use random fake generat
 ## End-point: /api/reviews/{id}
 ### Method: GET
 >```
->{{base_url}}/api/reviews/{{product_id}}
+>{{base_url}}/api/reviews/{{review_id}}
 >```
 ### Response: 200
 ```json
@@ -360,7 +360,7 @@ This is a fake backend for demo porpouses. All endpoints use random fake generat
 ## End-point: /api/reviews/{id}
 ### Method: DELETE
 >```
->{{base_url}}/api/reviews/{{product_id}}
+>{{base_url}}/api/reviews/{{review_id}}
 >```
 ### Response: 200
 ```json
@@ -407,7 +407,7 @@ This is a fake backend for demo porpouses. All endpoints use random fake generat
 ## End-point: /api/users/{id}
 ### Method: GET
 >```
->{{base_url}}/api/users/{{product_id}}
+>{{base_url}}/api/users/{{user_id}}
 >```
 ### Body (**raw**)
 
@@ -467,7 +467,7 @@ This is a fake backend for demo porpouses. All endpoints use random fake generat
 ## End-point: /api/users
 ### Method: PATCH
 >```
->{{base_url}}/api/users/{{product_id}}
+>{{base_url}}/api/users/{{user_id}}
 >```
 ### Body (**raw**)
 
@@ -500,7 +500,7 @@ This is a fake backend for demo porpouses. All endpoints use random fake generat
 ## End-point: /api/users/{id}
 ### Method: DELETE
 >```
->{{base_url}}/api/users/{{product_id}}
+>{{base_url}}/api/users/{{user_id}}
 >```
 ### Body (**raw**)
 
@@ -578,7 +578,7 @@ This is a fake backend for demo porpouses. All endpoints use random fake generat
 ## End-point: /api/orders/{id}
 ### Method: GET
 >```
->{{base_url}}/api/orders/{{product_id}}
+>{{base_url}}/api/orders/{{order_id}}
 >```
 ### Response: 200
 ```json
@@ -716,7 +716,7 @@ This is a fake backend for demo porpouses. All endpoints use random fake generat
 ## End-point: /api/orders/{id}
 ### Method: DELETE
 >```
->{{base_url}}/api/orders/{{product_id}}
+>{{base_url}}/api/orders/{{order_id}}
 >```
 ### Response: 200
 ```json

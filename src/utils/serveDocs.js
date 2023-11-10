@@ -5,7 +5,7 @@ const YAML = require('yamljs');
 const app = express();
 const port = 3000;
 
-const swaggerDocument = YAML.load('./documentation/fake-backend-demo.yml');
+const swaggerDocument = YAML.load('./docs/fake-backend-demo.yml');
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
